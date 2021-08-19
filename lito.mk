@@ -556,5 +556,11 @@ PRODUCT_PACKAGES += \
     libnl \
     libwfdaac_vendor
 
+# Disable Rescue Party on userdebug & eng build
+ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
+PRODUCT_PRODUCT_PROPERTIES += \
+    persist.sys.disable_rescue=true
+endif
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/sm7250-common/sm7250-common-vendor.mk)
