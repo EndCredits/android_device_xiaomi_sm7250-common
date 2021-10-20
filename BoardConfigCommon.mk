@@ -6,6 +6,9 @@
 
 COMMON_PATH := device/xiaomi/sm7250-common
 
+# Input
+TARGET_INPUTDISPATCHER_SKIP_EVENT_KEY := 338
+
 # APEX
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 
