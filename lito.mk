@@ -359,7 +359,7 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.xiaomi-libperfmgr
+    android.hardware.power-service-qti
 
 PRODUCT_SOONG_NAMESPACES += \
     hardware/google/interfaces \
