@@ -344,6 +344,10 @@ ro.com.android.dataroaming=false
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 ro.telephony.default_network=33,33
 
+# RIL
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.sys.fflag.override.settings_provider_model=false
+
 # Seamless transfer
 PRODUCT_PROPERTY_OVERRIDES += \
 sys.fflag.override.settings_seamless_transfer=true
