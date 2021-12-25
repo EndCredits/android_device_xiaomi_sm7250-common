@@ -1,9 +1,8 @@
 [
   {
-    "repository": "xiaomi-sm8250-devs/android_hardware_xiaomi",
+    "repository": "hardware_xiaomi",
     "target_path": "hardware/xiaomi",
-    "branch": "lineage-19.0",
-    "remote": "github"
+    "branch": "twelve"
   },
   {
     "repository": "kernel_xiaomi_sm7250",
