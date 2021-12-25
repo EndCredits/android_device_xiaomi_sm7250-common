@@ -1,4 +1,4 @@
-type vendor_fp_prop, property_type;
+vendor_public_prop(vendor_fp_prop);
 
 type vendor_fm_prop, property_type;
 
