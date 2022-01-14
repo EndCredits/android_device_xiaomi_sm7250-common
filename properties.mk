@@ -217,7 +217,8 @@ persist.vendor.cne.feature=1
 
 # DPM
 PRODUCT_SYSTEM_PROPERTIES += \
-persist.vendor.dpm.feature=1
+persist.vendor.dpm.feature=1 \
+persist.vendor.dpmhalservice.enable=1
 
 # DRM
 PRODUCT_VENDOR_PROPERTIES += \
@@ -230,6 +231,10 @@ persist.vendor.qfp=false
 # FRP
 PRODUCT_VENDOR_PROPERTIES += \
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
+
+# FM
+PRODUCT_VENDOR_PROPERTIES += \
+vendor.hw.fm.init=0 \
 
 # Fwk detect
 PRODUCT_VENDOR_PROPERTIES += \
@@ -289,10 +294,11 @@ PRODUCT_SYSTEM_PROPERTIES += \
 ro.config.low_ram = false
 
 # Media
-debug.media.codec2=2
-debug.stagefright.c2inputsurface=-1
-debug.stagefright.ccodec=4
-debug.stagefright.omx_default_rank=512
+PRODUCT_VENDOR_PROPERTIES += \
+debug.media.codec2=2 \
+debug.stagefright.c2inputsurface=-1 \
+debug.stagefright.ccodec=4 \
+debug.stagefright.omx_default_rank=512 \
 vendor.mm.enable.qcom_parser=16711679
 
 # Netflix
@@ -319,11 +325,17 @@ vendor.power.pasr.enabled=false
 
 # Perf
 PRODUCT_VENDOR_PROPERTIES += \
-ro.vendor.extension_library=libqti-perfd-client.so
+ro.vendor.extension_library=libqti-perfd-client.so \
+ro.vendor.perf.scroll_opt=true \
+ro.vendor.perf-hal.ver=2.2
 
 PRODUCT_SYSTEM_PROPERTIES += \
 ro.vendor.qti.core_ctl_max_cpu=4 \
 ro.vendor.qti.core_ctl_min_cpu=2
+
+# QSPM
+PRODUCT_VENDOR_PROPERTIES += \
+ro.vendor.qspm.enable=true
 
 # Radio
 PRODUCT_VENDOR_PROPERTIES += \
