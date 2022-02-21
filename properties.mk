@@ -361,6 +361,11 @@ persist.vendor.sensors.sync_request=true
 PRODUCT_PROPERTY_OVERRIDES += \
 sys.vendor.shutdown.waittime=500
 
+# SOC
+PRODUCT_VENDOR_PROPERTIES += \
+ro.soc.manufacturer=Qualcomm \
+ro.soc.model=SM7250
+
 # USB
 PRODUCT_PROPERTY_OVERRIDES += \
 vendor.usb.diag.func.name=diag \
