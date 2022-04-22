@@ -269,10 +269,6 @@ vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so|7b67b47030f00af1c2e207995
 vendor/lib64/vendor.qti.esepowermanager@1.0.so|6d4719779fd63c2500fbdf4cc94a3ec1a5cdd685
 vendor/lib64/vendor.qti.esepowermanager@1.1.so|bd6e25eef9269451ffdc4787a056aa0f0c0c9abf
 
-# Feature enabler client
-vendor/bin/feature_enabler_client
-vendor/etc/init/feature_enabler_client.rc
-
 # FM
 system_ext/lib/fm_helium.so
 system_ext/lib/libfm-hci.so
