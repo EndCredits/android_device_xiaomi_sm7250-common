@@ -673,12 +673,25 @@ function configure_memory_parameters() {
     ProductName=`getprop ro.product.name`
     low_ram=`getprop ro.config.low_ram`
 
-    if [ "$ProductName" == "msmnile" ] || [ "$ProductName" == "kona" ] || [ "$ProductName" == "sdmshrike_au" ] || [ "$ProductName" == "alioth" ]; then
-        # Enable ZRAM
-        configure_zram_parameters
-        configure_read_ahead_kb_values
-        echo 0 > /proc/sys/vm/page-cluster
-        echo 100 > /proc/sys/vm/swappiness
+if [ "$ProductName" == "msmnile" ] || [ "$ProductName" == "kona" ] || [ "$ProductName" == "sdmshrike_au" ] || [ "$ProductName" == "alioth" ]; then
+      # Enable ZRAM
+      configure_zram_parameters
+      configure_read_ahead_kb_values
+      echo 0 > /proc/sys/vm/page-cluster
+      echo 100 > /proc/sys/vm/swappiness
+
+      #add memory limit to camera cgroup
+        MemTotalStr=`cat /proc/meminfo | grep MemTotal`
+        MemTotal=${MemTotalStr:16:8}
+        if [ $MemTotal -gt 8388608 ]; then
+            let LimitSize=838860800
+        else
+            let LimitSize=524288000
+        fi
+
+        echo $LimitSize > /dev/memcg/camera/memory.soft_limit_in_bytes
+else
+    arch_type=`uname -m`
 
         #add memory limit to camera cgroup
         MemTotalStr=`cat /proc/meminfo | grep MemTotal`
@@ -3720,8 +3733,6 @@ case "$target" in
         echo "0:1516800" > /sys/devices/system/cpu/cpu_boost/input_boost_freq
         echo 120 > /sys/devices/system/cpu/cpu_boost/input_boost_ms
         echo 1 > /sys/devices/system/cpu/cpu_boost/sched_boost_on_powerkey_input
-        echo "0:1804800 1:0 2:0 3:0 4:0 5:0 6:2208000 7:0" > /sys/devices/system/cpu/cpu_boost/powerkey_input_boost_freq
-        echo 400 > /sys/devices/system/cpu/cpu_boost/powerkey_input_boost_ms
 
         # Set Memory parameters
         configure_memory_parameters
