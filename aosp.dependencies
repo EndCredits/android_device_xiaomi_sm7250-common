@@ -10,5 +10,12 @@
     "target_path": "hardware/xiaomi",
     "branch": "twelve",
     "remote": "pixel"
+  },
+  {
+   "repository" : "vendor_xiaomi-firmware",
+   "target_path": "vendor/xiaomi-firmware",
+   "remote"     : "pixel-devices-blobs",
+   "clone-depth": "1",
+   "branch"     : "twelve"
   }
 ]
