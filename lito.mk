@@ -179,11 +179,6 @@ PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
     android.hardware.ir@1.0-service
 
-# Codec2 modules
-PRODUCT_PACKAGES += \
-    com.android.media.swcodec \
-    libsfplugin_ccodec
-
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
@@ -295,60 +290,8 @@ PRODUCT_PACKAGES += \
     libavservices_minijail \
     libavservices_minijail.vendor \
     libavservices_minijail_vendor \
-    libcodec2_hidl@1.0.vendor:32 \
-    libcodec2_vndk.vendor:32 \
-    libstagefright_softomx.vendor \
-    android.hardware.media.c2@1.0.vendor \
-    android.hardware.media.c2@1.2.vendor
-    
-# Enable Codec 2.0
-PRODUCT_PACKAGES += \
-    libqcodec2_base \
-    libqcodec2_utils \
-    libqcodec2_platform \
-    libqcodec2_core \
-    libqcodec2_basecodec \
-    libqcodec2_v4l2codec \
-    vendor.qti.media.c2@1.0-service \
-    codec2.vendor.ext-arm64.policy \
-    codec2.vendor.base-arm64.policy
-
-# Media codecs C2
-PRODUCT_PACKAGES += \
-    codec2play \
-    libcodec2_soft_aacdec \
-    libcodec2_soft_aacenc \
-    libcodec2_soft_amrnbdec \
-    libcodec2_soft_amrwbdec \
-    libcodec2_soft_amrnbenc \
-    libcodec2_soft_amrwbenc \
-    libcodec2_soft_av1dec_aom \
-    libcodec2_soft_avcdec \
-    libcodec2_soft_avcenc \
-    libcodec2_soft_common \
-    libcodec2_soft_flacdec \
-    libcodec2_soft_flacenc \
-    libcodec2_soft_g711alawdec \
-    libcodec2_soft_g711mlawdec \
-    libcodec2_soft_av1dec_gav1 \
-    libcodec2_soft_gsmdec \
-    libcodec2_soft_hevcdec \
-    libcodec2_soft_hevcenc \
-    libcodec2_soft_mp3dec \
-    libcodec2_soft_mpeg2dec \
-    libcodec2_soft_mpeg4dec \
-    libcodec2_soft_h263dec \
-    libcodec2_soft_mpeg4enc \
-    libcodec2_soft_h263enc \
-    libcodec2_soft_opusdec \
-    libcodec2_soft_opusenc \
-    libcodec2_soft_rawdec \
-    libcodec2_soft_vorbisdec \
-    libcodec2_soft_vp9dec \
-    libcodec2_soft_vp8dec \
-    libcodec2_soft_vp9enc \
-    libcodec2_soft_vp8enc \
-    libcodec2_soft_xaacdec
+    libcodec2_hidl@1.0.vendor \
+    libcodec2_vndk.vendor
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/media_codecs_performance_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_v1.xml \
@@ -400,10 +343,6 @@ PRODUCT_PACKAGES += \
 
 # OMX
 PRODUCT_PACKAGES += \
-    libc2dcolorconvert \
-    libcodec2_hidl@1.0.vendor \
-    libcodec2_vndk.vendor \
-    libmm-omxcore \
     libOmxAacEnc \
     libOmxAmrEnc \
     libOmxCore \
@@ -412,7 +351,8 @@ PRODUCT_PACKAGES += \
     libOmxQcelp13Enc \
     libOmxVdec \
     libOmxVenc \
-    libstagefrighthw
+    libstagefrighthw \
+    libstagefright_omx.vendor
 
 # Perf
 PRODUCT_PACKAGES += \
