@@ -4,6 +4,8 @@ hal_client_domain(hal_fingerprint_default, vendor_hal_perf)
 # Allow binder communication with vendor_hal_perf_default
 binder_call(hal_fingerprint_default, vendor_hal_perf_default)
 
+typeattribute hal_fingerprint_default data_between_core_and_vendor_violators;
+
 allow hal_fingerprint_default vendor_fingerprint_data_file:dir rw_dir_perms;
 allow hal_fingerprint_default vendor_fingerprint_data_file:file create_file_perms;
 
