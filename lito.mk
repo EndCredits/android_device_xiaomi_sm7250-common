@@ -343,15 +343,15 @@ PRODUCT_PACKAGES += \
 
 # OMX
 PRODUCT_PACKAGES += \
-    libOmxAacEnc \
-    libOmxAmrEnc \
+    android.hardware.media.omx@1.0-impl \
+    android.hardware.media.omx@1.0-service \
+    libmm-omxcore \
     libOmxCore \
-    libOmxEvrcEnc \
-    libOmxG711Enc \
-    libOmxQcelp13Enc \
-    libOmxVdec \
-    libOmxVenc \
     libstagefrighthw \
+    libOmxVdec \
+    libOmxVdecHevc \
+    libOmxVenc \
+    libc2dcolorconvert \
     libstagefright_omx.vendor
 
 # Perf
