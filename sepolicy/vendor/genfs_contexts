@@ -48,6 +48,9 @@ genfscon sysfs /devices/platform/soc/aae0000.qcom,venus/subsys5/restart_level   
 genfscon sysfs /devices/platform/soc/9800000.qcom,npu/subsys6/restart_level      u:object_r:sysfs_ssr_toggle:s0
 
 # Touchpanel
+genfscon sysfs /sys/class/touch/touch_dev/partial_diff_data                     u:object_r:sysfs_touchpanel:s0
+genfscon sysfs /sys/class/touch/touch_dev/palm_sensor                           u:object_r:sysfs_touchpanel:s0
+genfscon sysfs /devices/virtual/touch/touch_dev/bump_sample_rate                u:object_r:sysfs_touchpanel:s0
 genfscon sysfs /touchpanel                                                      u:object_r:sysfs_touchpanel:s0
 
 # UFS
