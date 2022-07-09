@@ -317,6 +317,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_USE_PROFILE_FOR_BOOT_IMAGE := true
 PRODUCT_DEX_PREOPT_BOOT_IMAGE_PROFILE_LOCATION := frameworks/base/config/boot-image-profile.txt
 
+# MultiGen LRU
+PRODUCT_SYSTEM_PROPERTIES += \
+    persist.device_config.mglru_native.lru_gen_config=all
+
 # Net
 PRODUCT_PACKAGES += \
     android.system.net.netd@1.1.vendor
@@ -482,6 +486,10 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_SOONG_NAMESPACES += \
     vendor/qcom/opensource/usb/etc
+
+# USAP Pool
+PRODUCT_SYSTEM_PROPERTIES += \
+    persist.device_config.runtime_native.usap_pool_enabled=true
 
 # Vibrator
 PRODUCT_PACKAGES += \
