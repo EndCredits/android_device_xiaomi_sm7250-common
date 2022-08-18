@@ -1,5 +1,11 @@
 [
   {
+    "repository": "vendor_xiaomi_sm7250-common",
+    "target_path": "vendor/xiaomi/sm7250-common",
+    "branch": "twelve",
+    "remote": "pixel-devices-blobs"
+  },
+  {
     "repository"   : "vendor_xiaomi_sdm845-common-extra",
     "target_path"  : "vendor/xiaomi/sdm845-common-extra",
     "branch"       : "twelve",
