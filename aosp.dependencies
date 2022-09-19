@@ -2,7 +2,7 @@
   {
     "repository": "vendor_xiaomi_sm7250-common",
     "target_path": "vendor/xiaomi/sm7250-common",
-    "branch": "twelve",
+    "branch": "thirteen-wip",
     "remote": "pixel-devices-blobs"
   },
   {
@@ -14,7 +14,7 @@
   {
     "repository": "hardware_xiaomi",
     "target_path": "hardware/xiaomi",
-    "branch": "twelve",
+    "branch": "thirteen",
     "remote": "pixel"
   },
   {
@@ -22,6 +22,6 @@
    "target_path": "vendor/xiaomi-firmware",
    "remote"     : "pixel-devices-blobs",
    "clone-depth": "1",
-   "branch"     : "twelve"
+   "branch"     : "thirteen"
   }
 ]
