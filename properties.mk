@@ -146,7 +146,7 @@ ro.vendor.bluetooth.wipower=false \
 vendor.qcom.bluetooth.soc=cherokee
 
 PRODUCT_PRODUCT_PROPERTIES += \
-bluetooth.profile.asha.central=true
+bluetooth.profile.asha.central.enabled=true
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
