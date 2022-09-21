@@ -145,6 +145,9 @@ ro.bluetooth.a2dp_offload.supported=true \
 ro.vendor.bluetooth.wipower=false \
 vendor.qcom.bluetooth.soc=cherokee
 
+PRODUCT_PRODUCT_PROPERTIES += \
+bluetooth.profile.asha.central=true
+
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
 vendor.camera.aux.packagelist=org.codeaurora.snapcam
