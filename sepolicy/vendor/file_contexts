@@ -114,3 +114,6 @@
 /sys/devices/virtual/diag/diag/wakeup[0-9]+(/.*)? u:object_r:sysfs_wakeup:s0
 /sys/devices/virtual/misc/(msm_wma|msm_amrwb|msm_ape|msm_aac|msm_alac|msm_g711mlaw|msm_qcelp|msm_multi_aac|msm_g711alaw|msm_evrc|msm_mp3|msm_wmapro|msm_amrnb|msm_amrwbplus)/wakeup[0-9]+(/.*)? u:object_r:sysfs_wakeup:s0
 /sys/devices/virtual/wakeup/wakeup[0-9]+(/.*)? u:object_r:sysfs_wakeup:s0
+
+# Label read_ahead_kb in /data partition
+/sys/devices/platform/soc/1d84000.ufshc/host0/target0:0:0/0:0:0:0/block/sda/queue/read_ahead_kb u:object_r:vendor_sysfs_scsi_host:s0
