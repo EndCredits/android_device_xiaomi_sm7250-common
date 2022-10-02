@@ -207,6 +207,11 @@ PRODUCT_PACKAGES += \
     vendor.goodix.hardware.biometrics.fingerprint@2.1.vendor
 endif
 
+ifeq ($(TARGET_HAS_SIDEFPS),true)
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.1-service.sm7250
+endif
+
 # FM
 PRODUCT_PACKAGES += \
     FM2 \
