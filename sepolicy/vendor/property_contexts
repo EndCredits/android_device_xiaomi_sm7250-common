@@ -39,6 +39,9 @@ ro.vendor.ril                                   u:object_r:vendor_public_vendor_
 vendor.ril.                                     u:object_r:vendor_radio_prop:s0
 rild.libpath                                    u:object_r:vendor_radio_prop:s0
 
+# RIL Path
+vendor.rild.libpath                                    u:object_r:vendor_radio_prop:s0
+
 # Thermal
 sys.thermal.                                    u:object_r:vendor_thermal_normal_prop:s0
 vendor.sys.thermal.                             u:object_r:vendor_thermal_normal_prop:s0
