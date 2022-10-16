@@ -2,7 +2,7 @@
   {
     "repository": "vendor_xiaomi_sm7250-common",
     "target_path": "vendor/xiaomi/sm7250-common",
-    "branch": "thirteen-wip",
+    "branch": "thirteen",
     "remote": "pixel-devices-blobs"
   },
   {
