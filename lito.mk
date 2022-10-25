@@ -203,13 +203,13 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     KeyHandler
-endif
 
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.xiaomi_lito
 
 PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.fingerprintextension@1.0.vendor
+endif
 
 # FM
 PRODUCT_PACKAGES += \
