@@ -214,6 +214,9 @@ endif
 ifeq ($(TARGET_HAS_SIDEFPS),true)
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.xiaomi_lito
+
+PRODUCT_PACKAGES += \
+    KeyHandler
 endif
 
 # FM
