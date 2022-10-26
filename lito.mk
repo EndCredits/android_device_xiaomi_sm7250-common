@@ -211,14 +211,6 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.fingerprintextension@1.0.vendor
 endif
 
-ifeq ($(TARGET_HAS_SIDEFPS),true)
-PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.xiaomi_lito
-
-PRODUCT_PACKAGES += \
-    KeyHandler
-endif
-
 # FM
 PRODUCT_PACKAGES += \
     FM2 \
