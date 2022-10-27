@@ -247,6 +247,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     IFAAService
 
+# Inherit from emulated storege
+# For details to https://source.android.com/devices/storage/sdcardfs-deprecate
+$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
+
 # IPACM
 PRODUCT_PACKAGES += \
     ipacm \
