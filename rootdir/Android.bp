@@ -24,6 +24,12 @@ sh_binary {
 }
 
 sh_binary {
+    name: "init.qcom.class_core.sh",
+    src: "bin/init.qcom.class_core.sh",
+    vendor: true,
+}
+
+sh_binary {
     name: "init.qcom.early_boot.sh",
     src: "bin/init.qcom.early_boot.sh",
     vendor: true,
@@ -78,6 +84,13 @@ prebuilt_etc {
 prebuilt_etc {
     name: "init.target.rc",
     src: "etc/init.target.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.xiaomi.rc",
+    src: "etc/init.xiaomi.rc",
     sub_dir: "init/hw",
     vendor: true,
 }
