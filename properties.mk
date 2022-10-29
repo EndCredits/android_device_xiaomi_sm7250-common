@@ -408,8 +408,7 @@ vendor.usb.use_gadget_hal=0
 
 # Volume steps
 PRODUCT_VENDOR_PROPERTIES += \
-ro.config.media_vol_steps=25 \
-ro.config.vc_call_vol_steps=10
+ro.config.media_vol_steps=25
 
 # WiFi
 PRODUCT_VENDOR_PROPERTIES += \
