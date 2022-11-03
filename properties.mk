@@ -405,6 +405,10 @@ persist.vendor.sensors.allow_non_default_discovery=true \
 persist.vendor.sensors.sync_request=true \
 persist.vendor.sensors.enable.mag_filter=true
 
+# SSR
+PRODUCT_VENDOR_PROPERTIES += \
+persist.vendor.ssr.restart_level=ALL_ENABLE
+
 # Shutdown
 PRODUCT_VENDOR_PROPERTIES += \
 sys.vendor.shutdown.waittime=500
