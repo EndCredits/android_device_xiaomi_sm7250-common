@@ -13,6 +13,10 @@ vendor/lib64/libadsp_default_listener.so|33f44a23edf2cf734658e762a19dfc207b1921b
 vendor/lib64/libloadalgo_stub.so|f544ef182d9cdc77e02eb8cc2a29ce4c02d0ddfc
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so|e92a9bf499d31770f73cc35e56c6a9d77285ba7c
 
+# ADSP
+vendor/lib/libadsprpc.so
+vendor/lib64/libadsprpc.so
+
 # Audio
 vendor/lib/libacdb-fts.so
 vendor/lib/libacdbloader.so
