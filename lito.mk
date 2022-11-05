@@ -270,12 +270,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.light-service.xiaomi
 
-ifeq (monet,$(PRODUCT_DEVICE))
 # Livedisplay
 PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@2.0-service-sdm \
     vendor.lineage.livedisplay@2.1-service.monet
-endif
 
 # Media
 PRODUCT_PACKAGES += \
