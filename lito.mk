@@ -201,10 +201,10 @@ PRODUCT_PACKAGES += \
     fastbootd
 
 # Fingerprint
-ifeq ($(TARGET_HAS_FOD),true)
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.xiaomi
 
+ifeq ($(TARGET_HAS_FOD),true)
 PRODUCT_PACKAGES += \
     libudfpshandler
 
