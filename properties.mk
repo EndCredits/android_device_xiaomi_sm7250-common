@@ -297,8 +297,7 @@ media.stagefright.enable-http=true \
 media.stagefright.enable-player=true \
 media.stagefright.enable-qcp=true \
 media.stagefright.enable-scan=true \
-media.stagefright.thumbnail.prefer_hw_codecs=true \
-ro.config.media_vol_steps=30
+media.stagefright.thumbnail.prefer_hw_codecs=true
 
 # Netflix
 PRODUCT_SYSTEM_PROPERTIES += \
