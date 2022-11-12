@@ -258,6 +258,7 @@ vendor/lib64/liboemcrypto.so|6967571dfa2de7f4d73731ab0879245361827831
 vendor/lib64/libtrustedapploader.so
 vendor/lib64/libwvhidl.so
 vendor/lib64/libwvkeybox.so|3bef9e673bae906848e39e752c972d5f7be4317a
+vendor/lib64/libspl.so|0cf185c22519bbae1e1232928fda151f538f9977
 
 # DSP service
 vendor/bin/dspservice
