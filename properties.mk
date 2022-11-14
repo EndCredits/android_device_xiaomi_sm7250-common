@@ -287,10 +287,9 @@ ro.config.low_ram = false
 
 # Media
 PRODUCT_VENDOR_PROPERTIES += \
-debug.media.codec2=2 \
-debug.stagefright.ccodec=4 \
+debug.stagefright.ccodec=1 \
 media.stagefright.thumbnail.prefer_hw_codecs=true \
-debug.stagefright.omx_default_rank=512 \
+debug.stagefright.omx_default_rank=0 \
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml \
 media.stagefright.enable-aac=true \
 media.stagefright.enable-fma2dp=true \
