@@ -573,16 +573,6 @@ vendor/lib64/unnhal-acc-common.so|0b1e861dc50ddaa2d9e9fc9e031bda50799d9c0a
 vendor/lib64/unnhal-acc-hta.so|b580e82e816097693badbe3d0f6c7af319ab4245
 vendor/lib64/unnhal-acc-hvx.so|381286e2bf7e3ff611673962548c78dfd35bc297
 
-# NFC
-vendor/bin/hw/android.hardware.nfc@1.2-service
-vendor/etc/init/android.hardware.nfc@1.2-service.rc
-vendor/lib64/hw/android.hardware.nfc@1.0-impl.so
-vendor/lib64/ese_client.so
-vendor/lib64/ese_spi_nxp.so
-vendor/lib64/hal_libnfc.so
-vendor/lib64/libchrome.so
-vendor/lib64/vendor.nxp.eventprocessor@1.0.so
-
 # OMX - from LA.UM.9.12.r1-14200.02-SMxx50.QSSI12.0
 vendor/lib/libAlacSwDec.so|cb41b0945e57b349e6aa476cdac4315ee13a2def
 vendor/lib/libApeSwDec.so|ce425ef9372ed6635e313422b3578f77b90ff526
