@@ -276,6 +276,7 @@ debug.sf.early.app.duration=16500000 \
 debug.sf.earlyGl.sf.duration=13500000 \
 debug.sf.earlyGl.app.duration=21000000 \
 debug.sf.hw=0 \
+debug.sf.disable_client_composition_cache=1 \
 persist.demo.hdmirotationlock=false \
 persist.sys.sf.color_mode=0 \
 persist.sys.sf.color_saturation=1.0 \
@@ -451,3 +452,13 @@ persist.camera.sensor.debug=0
 
 # Zygote
 zygote.critical_window.minute=10
+
+# Fling
+PRODUCT_VENDOR_PROPERTIES += \
+ro.min.fling_velocity=160  \
+ro.max.fling_velocity=20000 \
+ro.max.fling_velocity=20000  \
+ro.vendor.qti.cgroup_follow.enable=true  \
+persist.vendor.qti.inputopts.enable=true  \
+persist.vendor.qti.inputopts.movetouchslop=0.6  \
+ro.qcom.adreno.qgl.ShaderStorageImageExtendedFormats=0
