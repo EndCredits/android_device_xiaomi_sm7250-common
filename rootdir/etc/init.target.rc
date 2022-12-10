@@ -43,7 +43,7 @@ on init
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
     start vendor.qseecomd
-    start keymaster-4-0
+    start vendor.keymaster-4-1
     #change owner of white led
     chown system system /sys/class/leds/white/brightness
     chown system system /sys/class/leds/white/breath
