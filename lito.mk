@@ -80,7 +80,6 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.service \
     android.hardware.bluetooth.audio-impl \
     android.hardware.soundtrigger@2.3-impl \
-    vendor.qti.hardware.audiohalext@1.0.vendor \
     android.hardware.bluetooth.a2dp@1.0
 
 PRODUCT_PACKAGES += \
@@ -150,10 +149,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
     vendor.qti.hardware.btconfigstore@2.0.vendor
 
-PRODUCT_PACKAGES += \
-    libldacBT_bco \
-    libldacBT_dec
-
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
@@ -182,7 +177,6 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
     libdisplayconfig.qti \
-    libdisplayconfig.qti.vendor \
     libdisplayconfig.system.qti \
     libqdMetaData \
     libqdMetaData.system \
@@ -261,7 +255,7 @@ PRODUCT_COPY_FILES += \
 
 # IFAA manager
 PRODUCT_PACKAGES += \
-    IfaaService
+    IFAAService
 
 # IPACM
 PRODUCT_PACKAGES += \
@@ -405,7 +399,6 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     fstab.default \
     fstab.emmc \
-    recovery.fstab \
     ueventd.qcom.rc
 
 PRODUCT_COPY_FILES += \
