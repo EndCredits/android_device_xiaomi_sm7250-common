@@ -307,7 +307,8 @@ PRODUCT_COPY_FILES += \
 # Mlipay
 PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.mlipay@1.1.vendor \
-    vendor.xiaomi.hardware.mtdservice@1.0.vendor
+    vendor.xiaomi.hardware.mtdservice@1.0.vendor \
+    vendor.xiaomi.hardware.mtdservice@1.2.vendor
 
 # Inherit several Android Go Configurations(Beneficial for everyone, even on non-Go devices)
 PRODUCT_USE_PROFILE_FOR_BOOT_IMAGE := true
