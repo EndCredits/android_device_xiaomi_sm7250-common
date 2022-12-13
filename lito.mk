@@ -417,6 +417,10 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-service \
     libsensorndkbridge
 
+# Service Tracker
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.servicetracker@1.2.vendor
+
 # Shim
 PRODUCT_PACKAGES += \
     libwatermark_shim
