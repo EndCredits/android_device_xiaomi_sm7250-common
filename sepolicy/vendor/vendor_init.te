@@ -4,7 +4,6 @@ set_prop(vendor_init, vendor_power_prop)
 set_prop(vendor_init, vendor_video_prop)
 get_prop(vendor_init, persist_debug_prop)
 set_prop(vendor_init, vendor_radio_prop)
-get_prop(vendor_init, init_service_status_private_prop)
 
 allow vendor_init {
   vendor_debugfs_clk
@@ -20,4 +19,4 @@ allow vendor_init input_device:chr_file { create setattr unlink rw_file_perms };
 
 allow vendor_init device:file rw_file_perms;
 
-allow vendor_init vendor_fingerprint_data_file:dir fw_dir_perms;
+allow vendor_init vendor_fingerprint_data_file:dir rw_dir_perms;
