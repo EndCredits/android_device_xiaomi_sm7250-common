@@ -19,4 +19,9 @@ allow vendor_init input_device:chr_file { create setattr unlink rw_file_perms };
 
 allow vendor_init device:file rw_file_perms;
 
-allow vendor_init vendor_fingerprint_data_file:dir rw_dir_perms;
+allow vendor_init vendor_fingerprint_data_file:dir { create open getattr setattr read write link unlink rename search add_name remove_name reparent rmdir lock ioctl relabelfrom relabelto };
+allow vendor_init vendor_fingerprint_data_file:dir { create };
+allow vendor_init vendor_fingerprint_data_file:dir { setattr };
+
+allow vendor_init media_rw_data_file:file { create open getattr setattr read write link unlink rename lock ioctl relabelfrom relabelto };
+allow vendor_init media_rw_data_file:file rw_file_perms;
