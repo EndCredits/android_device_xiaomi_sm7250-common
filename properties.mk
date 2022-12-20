@@ -185,7 +185,6 @@ ro.soc.model=SM7250
 
 # Crypto
 PRODUCT_VENDOR_PROPERTIES += \
-ro.crypto.allow_encrypt_override=true \
 ro.crypto.volume.filenames_mode=aes-256-cts \
 
 # Dalvik
