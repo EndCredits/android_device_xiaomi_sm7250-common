@@ -166,6 +166,12 @@ bluetooth.profile.pan.panu.enabled=true \
 bluetooth.profile.pbap.server.enabled=true \
 bluetooth.profile.sap.server.enabled=true
 
+# Blurs
+ro.surface_flinger.supports_background_blur=1
+
+# Disable blur on app launch
+ro.launcher.blur.appLaunch=1
+
 # Camera
 PRODUCT_VENDOR_PROPERTIES += \
 vendor.camera.aux.packagelist=com.android.camera,org.lineageos.aperture,org.pixelexperience.faceunlock
