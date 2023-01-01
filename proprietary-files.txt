@@ -531,13 +531,6 @@ vendor/lib/liblistensoundmodel2.so|7af3a7461e9fd54e726a06c3ea47afb936e77ea5
 vendor/lib/libmulawdec.so|89ebb1d9e77911f1abe37405016839d8436a9825
 vendor/lib/libsmwrapper.so|af37e8bd00fd4130094349c1d94e83c5b0c20550
 
-# Media - from LA.UM.9.12.r1-14200.02-SMxx50.QSSI12.0
-system_ext/lib/libmmosal.so|f5220fd635271685df63a27bde00d638e14e2728
-system_ext/lib/libmmparser_lite.so|c7892eee4c7f5785b183811920388e97168a20e3
-system_ext/lib64/libmmosal.so|928a1da9ef313083ea5b48cba769100f385c9b02
-vendor/etc/system_properties.xml|df9a0232bce88a3ca15b21de79b18a6917ea5e67
-vendor/lib64/libmmosal.so|60b7a94d6cd73c6d5be0e76dd503179adafd79a7
-
 # Neural networks - from LA.UM.9.12.r1-14200.02-SMxx50.QSSI12.0
 vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti|f2c199f2929ad26a2cbdc0bdb18615e8304dc264
 vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc|4b7f2c5f914f3eef38f19936c0a06efc09b5b28c
@@ -550,53 +543,51 @@ vendor/lib64/unnhal-acc-common.so|0b1e861dc50ddaa2d9e9fc9e031bda50799d9c0a
 vendor/lib64/unnhal-acc-hta.so|b580e82e816097693badbe3d0f6c7af319ab4245
 vendor/lib64/unnhal-acc-hvx.so|381286e2bf7e3ff611673962548c78dfd35bc297
 
-# OMX - from LA.UM.9.12.r1-14200.02-SMxx50.QSSI12.0
-vendor/lib/libAlacSwDec.so|cb41b0945e57b349e6aa476cdac4315ee13a2def
-vendor/lib/libApeSwDec.so|ce425ef9372ed6635e313422b3578f77b90ff526
-vendor/lib/libdsd2pcm.so|c5ab1afd7a5a23bf83d80b5ac74247c3dd2085af
-vendor/lib/libFlacSwDec.so|6b17d0965c9f8bddab3ffd59e7bb16e92bb68d85
-vendor/lib/libMpeg4SwEncoder.so|5ece5c259302a936c83f8d216540b11024d56742
-vendor/lib/libMpeghSwEnc.so|ea2b1eccc81185e0553978b249c417f017576d90
-vendor/lib/libOmxAacDec.so|15daa5bc66938671d940643a33ddc82cc5c7ef54
-vendor/lib/libOmxAlacDec.so|4222a174b19033ab5dd94b7cede9966256bf4f0b
-vendor/lib/libOmxAlacDecSw.so|150f1fee193918792a88797766ddf12d1a388efd
-vendor/lib/libOmxAmrDec.so|377d29fc698f2e0aec7f6511840641882f9a9f0f
-vendor/lib/libOmxAmrwbplusDec.so|f0daeadbf309b5fb03834d60b4ef770a26337210
-vendor/lib/libOmxApeDec.so|5295a8fbfc80346cf50aac27fb8caf6ed484e316
-vendor/lib/libOmxApeDecSw.so|f3e64e54808f57f146173532335ea45db1fb54f4
-vendor/lib/libOmxDsdDec.so|f74936badeb8303b2bb17475b9cd157b1c81131c
-vendor/lib/libOmxEvrcDec.so|b5d73cca82a7b2a80a8e0cae979203f1ca2e8798
-vendor/lib/libOmxG711Dec.so|5f2c28d4f0dbb89a74e49ed98e9efa990255065a
-vendor/lib/libOmxMpeghDecSw.so|eccb477e329f7178bc4daf28b1709c817734fc8e
-vendor/lib/libOmxMpeghEncSw.so|7ea10eea872ab2315f9dcf40a774853d9237ebc1
-vendor/lib/libOmxQcelp13Dec.so|9de32f322670a144ffbadabfc34281c409af4cfe
-vendor/lib/libOmxSwVdec.so|451e48ed0b131ec4e44194c3c8f6928037965500
-vendor/lib/libOmxSwVencMpeg4.so|85742b6565c9ec14e184d21ffc01839263ebacce
-vendor/lib/libOmxVideoDSMode.so|c4e36ec5ff61194d991ee7ac1a24998ed224b0c1
-vendor/lib/libOmxVpp.so|7ee2ea57a5c9d053f508f114e25c59d10627a613
-vendor/lib/libOmxWmaDec.so|ace627b2c1ad6116a521935ae80b3352fd5d3c10
-vendor/lib/libswvdec.so|7d269da9b5b9b2f5e4ee3ce3b68e3725ce012ef0
-vendor/lib64/libAlacSwDec.so|2bd791269f5151fa6b6cfaaa1744f5c0ecb19d28
-vendor/lib64/libApeSwDec.so|efac4ae01cd425577c704d06704b00970d324167
-vendor/lib64/libFlacSwDec.so|1aa31537b6f1f5752eb44486310647631cbb5c89
-vendor/lib64/libMpeg4SwEncoder.so|faf3705772ae55f8181bed997ac08bb9d1863abe
-vendor/lib64/libMpeghSwEnc.so|14b2f5d42aa43b0ca8c5cf0ebac467acf6e81847
-vendor/lib64/libOmxAacDec.so|15c13ea1fa86f59eb26420bbf4364c7eb639a8d7
-vendor/lib64/libOmxAlacDec.so|4427cd4308eb1e0b86cae682c02dd89ef7903344
-vendor/lib64/libOmxAlacDecSw.so|2174f226c15ff15558bbfaab559f6542fcd784ab
-vendor/lib64/libOmxAmrDec.so|621c36b7c8fbafdb595c92fdca2a138486775ab6
-vendor/lib64/libOmxAmrwbplusDec.so|dc42bbd2280d5cc6e24b8e7c1f20ceca8f643c76
-vendor/lib64/libOmxApeDec.so|8f9a3558d873f04f1c8bff7f5b3b06e8385fce2f
-vendor/lib64/libOmxApeDecSw.so|76741dbc4de400163e692817d200ae02ab72f85e
-vendor/lib64/libOmxEvrcDec.so|e92a9a579dc15b692276c3b0134cb5e431f805e2
-vendor/lib64/libOmxG711Dec.so|4ec86d7c75c85c119613b0fb5bec8e5861b88e2d
-vendor/lib64/libOmxMpeghEncSw.so|b7c9db846385f6431c3e488082c68f3488517860
-vendor/lib64/libOmxQcelp13Dec.so|177c8a7bfd59965ea8a1605f39cf36133b50099a
-vendor/lib64/libOmxSwVdec.so|b43da1bd4c93c9cf560a6e33ce220c832d82b2d3
-vendor/lib64/libOmxSwVencMpeg4.so|17ac7ae89806ec4434d3404a015d3db70b3ac449
-vendor/lib64/libOmxVpp.so|85299c02bb0f830d5144fb0b01e2bf819169b3cb
-vendor/lib64/libOmxWmaDec.so|53d4b8e8a214caf7865d69cb02f4b722f0967c7d
-vendor/lib64/libswvdec.so|e50cc714152873d4fdcabd3ed1bbf9e635725b78
+# OMX
+vendor/lib/libAlacSwDec.so
+vendor/lib/libApeSwDec.so
+vendor/lib/libFlacSwDec.so
+vendor/lib/libMpeg4SwEncoder.so
+vendor/lib/libOmxAacDec.so
+vendor/lib/libOmxAlacDec.so
+vendor/lib/libOmxAlacDecSw.so
+vendor/lib/libOmxAmrDec.so
+vendor/lib/libOmxAmrwbplusDec.so
+vendor/lib/libOmxApeDec.so
+vendor/lib/libOmxApeDecSw.so
+vendor/lib/libOmxDsdDec.so
+vendor/lib/libOmxEvrcDec.so
+vendor/lib/libOmxG711Dec.so
+vendor/lib/libOmxMpeghDecSw.so
+vendor/lib/libOmxMpeghEncSw.so
+vendor/lib/libOmxQcelp13Dec.so
+vendor/lib/libOmxSwVdec.so
+vendor/lib/libOmxSwVencMpeg4.so
+vendor/lib/libOmxVideoDSMode.so
+vendor/lib/libOmxVpp.so
+vendor/lib/libOmxWmaDec.so
+vendor/lib/libdsd2pcm.so
+vendor/lib/libswvdec.so
+vendor/lib64/libAlacSwDec.so
+vendor/lib64/libApeSwDec.so
+vendor/lib64/libFlacSwDec.so
+vendor/lib64/libMpeg4SwEncoder.so
+vendor/lib64/libOmxAacDec.so
+vendor/lib64/libOmxAlacDec.so
+vendor/lib64/libOmxAlacDecSw.so
+vendor/lib64/libOmxAmrDec.so
+vendor/lib64/libOmxAmrwbplusDec.so
+vendor/lib64/libOmxApeDec.so
+vendor/lib64/libOmxApeDecSw.so
+vendor/lib64/libOmxEvrcDec.so
+vendor/lib64/libOmxG711Dec.so
+vendor/lib64/libOmxMpeghEncSw.so
+vendor/lib64/libOmxQcelp13Dec.so
+vendor/lib64/libOmxSwVdec.so
+vendor/lib64/libOmxSwVencMpeg4.so
+vendor/lib64/libOmxVpp.so
+vendor/lib64/libOmxWmaDec.so
+vendor/lib64/libswvdec.so
 
 # OMX
 vendor/lib/libI420colorconvert.so
@@ -605,6 +596,36 @@ vendor/lib/libstagefright_soft_qtiflacdec.so
 vendor/lib64/libI420colorconvert.so
 vendor/lib64/libmm-color-convertor.so
 vendor/lib64/libstagefright_soft_qtiflacdec.so
+
+# Media
+system_ext/lib/libmmosal.so
+system_ext/lib/libmmparser_lite.so
+system_ext/lib64/libmmosal.so
+system_ext/lib64/libmmparser_lite.so
+vendor/lib/libmmosal.so
+vendor/lib64/libmmosal.so
+
+# Media (Codec2)
+vendor/bin/hw/vendor.qti.media.c2@1.0-service
+vendor/etc/init/vendor.qti.media.c2@1.0-service.rc
+vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy
+vendor/etc/seccomp_policy/codec2.vendor.ext-arm.policy
+vendor/etc/vintf/manifest/c2_manifest_vendor.xml
+vendor/lib/libqcodec2_base.so
+vendor/lib/libqcodec2_basecodec.so
+vendor/lib/libqcodec2_core.so
+vendor/lib/libqcodec2_platform.so
+vendor/lib/libqcodec2_utils.so
+vendor/lib/libqcodec2_v4l2codec.so
+vendor/lib/libvideooptfeature.so
+vendor/lib/libvideoutils.so
+vendor/lib64/libqcodec2_base.so
+vendor/lib64/libqcodec2_basecodec.so
+vendor/lib64/libqcodec2_core.so
+vendor/lib64/libqcodec2_platform.so
+vendor/lib64/libqcodec2_utils.so
+vendor/lib64/libqcodec2_v4l2codec.so
+vendor/lib64/libvideooptfeature.so
 
 # Keymaster - from picasso
 vendor/lib64/libkeymaster_messages.so|ded5c943c17022eb34cafefdeefb1fccf3a9ae96
@@ -951,7 +972,6 @@ system_ext/lib/libwfduibcsinkinterface.so|475241a523247405bfe7d7a91abdc7f66800c5
 system_ext/lib/libwfduibcsrc.so|380cecce406fc262fcb2a3488831a0870cb24064
 system_ext/lib/libwfduibcsrcinterface.so|49c5722895a6c5fcbb45523c52f8f6fe680e917b
 system_ext/lib/vendor.qti.hardware.wifidisplaysession@1.0.so|3f4e4e019a281653a9154d7ac7df26ede26f59da
-system_ext/lib64/libmmparser_lite.so|3b9e4149d52d17c015bba8826f6c26d8fbfff8e9
 system_ext/lib64/libmmrtpdecoder.so|a3048997c8197d17a32ebcbbdfc2087dce6827fb
 system_ext/lib64/libmmrtpencoder.so|eeda0134773ec064fbd8de9d101e08a3fc509ab5
 system_ext/lib64/libwfdclient.so|b15eca67079b2bfb360828e0b3e0735450576e72
@@ -983,7 +1003,6 @@ vendor/etc/wfdconfig.xml|9e13371f7ae509cc0bbb3f2ace93c5ea5d87bf0f
 vendor/lib/libDxHdcp.so|ffac42a8ab2581d036c9bcd18e02aac49e5d49e7
 vendor/lib/libFileMux_proprietary.so|1e125137fcc2c1843cc14e3ec34fc1068fc6bc14
 vendor/lib/libmm-hdcpmgr.so|370c35741ca44eaeb7382bbf6ba53a82759f6b09
-vendor/lib/libmmosal.so|dd0d1a01f4934e519d86c1e43ab2cfd2cc11f524
 vendor/lib/libmmrtpdecoder_proprietary.so|227a26b9ec9ee6f2dc95de47b713b215e8b6c93e
 vendor/lib/libmmrtpencoder_proprietary.so|d0aec32b8e565912ecc475bad40ed626ac1ee04d
 vendor/lib/libwfdcodecv4l2_proprietary.so|b5f235845314d95598277cd6e3bb994203cdfa4e

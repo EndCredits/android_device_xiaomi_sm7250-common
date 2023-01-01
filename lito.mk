@@ -278,8 +278,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libavservices_minijail \
     libavservices_minijail.vendor \
-    libavservices_minijail_vendor \
-    libstagefright_softomx.vendor
+    libavservices_minijail_vendor
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
@@ -336,11 +335,16 @@ PRODUCT_PACKAGES += \
     SecureElement \
     Tag
 
+# Codec2
+PRODUCT_PACKAGES += \
+    libcodec2_vndk.vendor \
+    android.hardware.media.c2@1.0.vendor \
+    libcodec2_hidl@1.0.vendor \
+    libcodec2_soft_common.vendor
+
 # OMX
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
-    libcodec2_hidl@1.0.vendor \
-    libcodec2_vndk.vendor \
     libmm-omxcore \
     libOmxAacEnc \
     libOmxAmrEnc \
