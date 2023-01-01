@@ -293,9 +293,11 @@ ro.hardware.vulkan=adreno \
 ro.opengles.version=196610 \
 vendor.gralloc.disable_ubwc=0 \
 debug.gralloc.enable_fb_ubwc=1 \
-debug.hwui.renderer=opengl \
 debug.hwui.use_hint_manager=true \
-debug.hwui.target_cpu_time_percent=30
+debug.hwui.target_cpu_time_percent=30 \
+debug.renderengine.backend=skiaglthreaded \
+debug.hwui.renderer=skiagl \
+renderthread.skia.reduceopstasksplitting=true 
 
 # IMS
 PRODUCT_SYSTEM_PROPERTIES += \
@@ -313,16 +315,11 @@ ro.config.low_ram = false
 
 # Media
 PRODUCT_VENDOR_PROPERTIES += \
-debug.stagefright.ccodec=1 \
-debug.stagefright.omx_default_rank=0 \
-media.settings.xml=/vendor/etc/media_profiles_vendor.xml \
-media.stagefright.enable-aac=true \
-media.stagefright.enable-fma2dp=true \
-media.stagefright.enable-http=true \
-media.stagefright.enable-player=true \
-media.stagefright.enable-qcp=true \
-media.stagefright.enable-scan=true \
-media.stagefright.thumbnail.prefer_hw_codecs=true
+debug.stagefright.ccodec=4 \
+debug.stagefright.omx_default_rank=0
+
+PRODUCT_SYSTEM_PROPERTIES += \
+media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 
 # Netflix
 PRODUCT_SYSTEM_PROPERTIES += \
@@ -459,6 +456,7 @@ persist.camera.isp.debug=0 \
 persist.camera.sensor.debug=0
 
 # Zygote
+PRODUCT_VENDOR_PROPERTIES += \
 zygote.critical_window.minute=10
 
 # Fling

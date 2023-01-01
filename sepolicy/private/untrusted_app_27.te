@@ -1,0 +1,7 @@
+get_prop(untrusted_app_27, qemu_hw_prop)
+get_prop(untrusted_app_27, qemu_sf_lcd_density_prop)
+allow untrusted_app_27 zygote:unix_stream_socket { getopt };
+allow untrusted_app_27 input_device:dir { search };
+allow untrusted_app_27 sysfs_net:dir { read open search };
+allow untrusted_app_27 proc_max_map_count:file { read open write getattr setattr };
+allow untrusted_app_27 input_device:chr_file { getattr };
