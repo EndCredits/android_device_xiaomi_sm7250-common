@@ -293,9 +293,7 @@ ro.hardware.vulkan=adreno \
 ro.opengles.version=196610 \
 vendor.gralloc.disable_ubwc=0 \
 debug.gralloc.enable_fb_ubwc=1 \
-debug.hwui.renderer=opengl \
-debug.hwui.use_hint_manager=true \
-debug.hwui.target_cpu_time_percent=30
+debug.hwui.renderer=opengl 
 
 # IMS
 PRODUCT_SYSTEM_PROPERTIES += \
