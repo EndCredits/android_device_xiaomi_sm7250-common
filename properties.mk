@@ -456,6 +456,7 @@ persist.camera.isp.debug=0 \
 persist.camera.sensor.debug=0
 
 # Zygote
+PRODUCT_VENDOR_PROPERTIES += \
 zygote.critical_window.minute=10
 
 # Fling
